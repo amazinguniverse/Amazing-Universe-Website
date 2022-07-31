@@ -12,7 +12,15 @@
   	<input type = "text" id = "firstNumber"><br>
     <label>Second Number: </label><br>
     <input type = "text" id = "secondNumber"><br><br>
-    <input id = "submitButton">
+    <button onclick = "calculate()">Submit</button>
   </form>
+  
+  <script>
+    function calculate(){
+      var num1 = document.getElementById('firstNumber').value;
+      const textHolder = document.createElement("p");
+      const displayFirstNumber = document.createTextNode(num1);
+    }
+  </script>
   
 </body>
