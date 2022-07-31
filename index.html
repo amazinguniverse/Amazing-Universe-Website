@@ -8,6 +8,13 @@
 </head>
 <body>
  
+  <script>
+    function calculate(){
+      var firstNum = document.getElementById("firstNumber").value;
+      alert(firstNum);
+    }
+  </script>
+  
   <form>
   	<label>First Number: </label><br>
   	<input type = "text" id = "firstNumber"><br>
@@ -15,13 +22,6 @@
     <input type = "text" id = "secondNumber"><br><br>
     <button id = "submitButton" onclick = "calculate()">Submit</button>
   </form>
-  
-  
-  <script>
-    function calculate(){
-      var firstNum = document.getElementById("firstNumber").value;
-      alert(firstNum);
-    }
-  </script>
+ 
   
 </body>
