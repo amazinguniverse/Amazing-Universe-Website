@@ -20,9 +20,11 @@
       if (signResult == "+"){
         var sum = parseFloat(firstNum) + parseFloat(secondNum);
         alert("The sum of " + firstNum + " and " + secondNum + " is " + sum + "!");
+        e.selectedIndex = e.value;
       } else if (signResult == "-"){
         var difference = parseFloat(firstNum) - parseFloat(secondNum);
         alert("The difference of " + firstNum + " and " + secondNum + " is " + difference + "!");
+        e.selectedIndex = e.value;
       }
       
     }
