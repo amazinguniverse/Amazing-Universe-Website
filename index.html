@@ -12,8 +12,12 @@
     function calculate(){
       var firstNum = document.getElementById("firstNumber").value;
       var secondNum = document.getElementById("secondNumber").value;
-      var sum = parseFloat(firstNum) + parseFloat(secondNum)
-      alert(sum);
+      
+      var e = document.getElementById("operations");
+      var eValue = e.value;
+      var text = e.options[e.selectedIndex].text;
+      
+      alert(text);
     }
   </script>
   
@@ -21,10 +25,10 @@
   	<label>First Number: </label><br>
   	<input type = "text" id = "firstNumber"><br><br>
     <select name="operation" id="operations">
-      <option id = "add">+</option>
-      <option id = "subtract">-</option>
-      <option id = "multiply">x</option>
-      <option id = "divide">/</option>
+      <option value = "add">+</option>
+      <option value = "subtract">-</option>
+      <option value = "multiply">x</option>
+      <option value = "divide">/</option>
     </select>
     <br><br>
     <label>Second Number: </label><br>
