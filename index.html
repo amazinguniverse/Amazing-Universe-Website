@@ -25,6 +25,14 @@
         var difference = parseFloat(firstNum) - parseFloat(secondNum);
         alert("The difference of " + firstNum + " and " + secondNum + " is " + difference + "!");
         e.selectedIndex = e.value;
+      } else if (signResult == "x"){
+        var product = parseFloat(firstNum) * parseFloat(secondNum);
+        alert("The product of " + firstNum + " and " + secondNum + " is " + product + "!");
+        e.selectedIndex = e.value;
+      } else if (signResult == "/"){
+        var quotient = parseFloat(firstNum) / parseFloat(secondNum);
+        alert("The quotient of " + firstNum + " and " + secondNum + " is " + quotient + "!");
+        e.selectedIndex = e.value;
       }
       
     }
