@@ -8,12 +8,20 @@
 </head>
 <body>
   
+  <script>
+    function addElement(){
+      var inputtedInfo = document.getElementById("inputField").value;
+      alert(inputtedInfo);
+    }
+    
+  </script>
+  
   <h1>To-Do List</h1>
   <br>
   
   <form>
     <input type = "text" id = "inputField">
-    <button id = "createElement">Add</button>
+    <button id = "createElement" onclick = "addElement()">Add</button>
     <button id = "editElements">Edit</button>
     
   </form>
