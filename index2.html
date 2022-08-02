@@ -11,7 +11,10 @@
   <script>
     function addElement(){
       var inputtedInfo = document.getElementById("inputField").value;
-      alert(inputtedInfo);
+      
+      const newElement = document.createElement("p");
+      newElement.innerText = "• " + inputtedInfo;
+      document.body.appendChild(newElement);
     }
     
   </script>
