@@ -23,9 +23,9 @@
   <h1>To-Do List</h1>
   <br>
   
-  <form>
+  <form onsubmit = "addElement(event);return false;">
     <input type = "text" id = "inputField">
-    <button id = "createElement" onclick = "addElement()">Add</button>
+    <button type = "submit" id = "createElement" onclick = "addElement(event)">Add</button>
     <button id = "editElements">Edit</button>
     
   </form>
