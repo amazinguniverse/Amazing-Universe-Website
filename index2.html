@@ -10,13 +10,12 @@
   
   <script>
     function addElement(event){
+      event.preventDefault();
       var inputtedInfo = document.getElementById("inputField").value;
       
       const newElement = document.createElement("p");
       newElement.innerText = "• " + inputtedInfo;
       document.body.appendChild(newElement);
-      
-      event.preventDefault();
     }
     
   </script>
