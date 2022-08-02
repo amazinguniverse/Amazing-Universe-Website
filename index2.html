@@ -9,12 +9,14 @@
 <body>
   
   <script>
-    function addElement(){
+    function addElement(event){
       var inputtedInfo = document.getElementById("inputField").value;
       
       const newElement = document.createElement("p");
       newElement.innerText = "• " + inputtedInfo;
       document.body.appendChild(newElement);
+      
+      event.preventDefault();
     }
     
   </script>
