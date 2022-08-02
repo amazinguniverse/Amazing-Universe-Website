@@ -9,6 +9,7 @@
 <body>
   
   <script>
+    
     function addElement(event){
       event.preventDefault();
       var inputtedInfo = document.getElementById("inputField").value;
@@ -16,14 +17,6 @@
       const newElement = document.createElement("p");
       newElement.innerText = "• " + inputtedInfo;
       document.body.appendChild(newElement);
-    }
-    
-    function editElements(event){
-      event.preventDefault();
-    }
-    
-    function clearAllElements(event){
-      event.preventDefault();
     }
     
   </script>
@@ -35,8 +28,7 @@
   <form>
     <input type = "text" id = "inputField">
     <button type = "submit" id = "createElement" onclick = "addElement(event)">Add</button> 
-    <button type = "button" id = "editElements" onclick = "editElements(event)">Edit</button>
-    <button type = "button" id = "clearAll" onclick = "clearAllElements(event)">Clear Al</button>
+    <button id = "clearElements">Clear All</button>
   </form>
   
 </body>
