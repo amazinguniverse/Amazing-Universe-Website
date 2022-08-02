@@ -22,6 +22,10 @@
       event.preventDefault();
     }
     
+    function clearAllElements(event){
+      event.preventDefault();
+    }
+    
   </script>
   
   <h1>To-Do List</h1>
@@ -32,6 +36,7 @@
     <input type = "text" id = "inputField">
     <button type = "submit" id = "createElement" onclick = "addElement(event)">Add</button> 
     <button type = "button" id = "editElements" onclick = "editElements(event)">Edit</button>
+    <button type = "button" id = "clearAll" onclick = "clearAllElements(event)">Clear Al</button>
   </form>
   
 </body>
