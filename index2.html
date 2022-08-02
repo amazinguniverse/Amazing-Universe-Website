@@ -18,6 +18,10 @@
       document.body.appendChild(newElement);
     }
     
+    function editElements(event){
+      event.preventDefault();
+    }
+    
   </script>
   
   <h1>To-Do List</h1>
@@ -27,7 +31,7 @@
   <form>
     <input type = "text" id = "inputField">
     <button type = "submit" id = "createElement" onclick = "addElement(event);">Add</button> 
-    <button id = "editElements">Edit</button>
+    <button id = "editElements" onclick = "editElements(event);">Edit</button>
   </form>
   
 </body>
